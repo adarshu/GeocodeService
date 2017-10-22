@@ -9,8 +9,8 @@ import urllib.request
 from urllib.error import URLError
 from urllib.parse import quote, urlencode
 
-from postmates.geocode_provider import GeocodeProvider
-from postmates.lat_lng import LatLng
+from geocode_provider import GeocodeProvider
+from lat_lng import LatLng
 
 
 class MyException(Exception):

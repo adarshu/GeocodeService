@@ -8,9 +8,8 @@ import configparser
 import json
 import logging
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from google_geocoder_provider import GoogleGeocoderProvider, MyException
 from urllib.parse import urlparse, parse_qs
-
-from postmates.google_geocoder import GoogleGeocoderProvider, MyException
 
 
 class GeocoderHTTPServer_RequestHandler(BaseHTTPRequestHandler):
