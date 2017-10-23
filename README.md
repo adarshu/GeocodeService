@@ -15,6 +15,11 @@ Response:
 - response will be Content-type: application/json
 - 400 HTTP code for invalid input
 - 500 HTTP code for server error
+- `status` is a code that indicates success or type of failure
+    - OK - geocode found
+    - INVALID - indicates invalid input
+    - GEOCODE_NOT_FOUND - if no geocode was found
+    - ERROR - server error occurred
 
 Sample response:
 <pre>
@@ -66,3 +71,10 @@ ApiKey = xxx
 AppId = xxx
 AppCode = xxx
 </pre>
+
+## Extending the code
+- 2 geocoding providers are provided: Google Maps, and Here maps
+- new Geocoding providers may be created via simply extending `GeocodeProvider` and using them as the primary or secondary provider
+
+## TODOs/Future enhancements
+Sample:
