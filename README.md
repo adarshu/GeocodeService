@@ -77,4 +77,13 @@ AppCode = xxx
 - new Geocoding providers may be created via simply extending `GeocodeProvider` and using them as the primary or secondary provider
 
 ## TODOs/Future enhancements
-Sample:
+- make the code follow the "Pythonic" way
+- (future) use popular 3rd party libraries to handle a lot of the logic and simplify the code
+- allow user to specify which geocode service to use in the API itself
+- cache repeat, frequent queries
+- secure storage of api keys
+- allow list of fallback providers
+- use enums to enumerate providers and validate
+- return metadata in response (such as Geocode provider used)
+- more thorough input validation (server port range check, config file, etc)
+- more unit tests
