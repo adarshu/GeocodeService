@@ -26,6 +26,10 @@ optional arguments:
                    value in config file
 </pre>
 
+Control logging:
+- logging.conf controls the logging configuration
+- set the `level` property to set the logging level
+
 Sample config file:
 Note: xxx values should be set to the appropriate value
 The Api keys below are required for the Google and Here services below
