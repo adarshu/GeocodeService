@@ -1,12 +1,14 @@
 # Copyright Adarsh Uppula, 2017
 #
 
-class MyException(Exception):
-    """Raise for my specific kind of exception"""
+class GeocodeException(Exception):
+    """Geocode exception"""
+
+    type_geocode_not_found = 'GEOCODE_NOT_FOUND'
 
     def __init__(self, message):
         self.message = message
+        self.type = None
 
-    def __init__(self, type, message):
+    def set_type(self, type):
         self.type = type
-        self.message = message

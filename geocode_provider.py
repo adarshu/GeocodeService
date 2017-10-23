@@ -1,26 +1,35 @@
 # Copyright Adarsh Uppula, 2017
 #
-# This program provides a REST-based Geocoding service to resolve addresses to latitude, longitude coordinates
-#
-#
 import abc
 
 
 class GeocodeProvider(metaclass=abc.ABCMeta):
-    timeout = 10
+    """An abstract Geocode provider that may use a third party service to fetch the lat/lng for a given geo address."""
 
-    def set_timeoout(self, timeout):
-        """Connection or read timeout"""
-        self.timeout = timeout
+    def __init__(self):
+        self._timeout = 10
+
+    @property
+    def timeout(self):
+        """Get the timeout (in seconds) of this provider. Default is 10 seconds."""
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, value):
+        """Set the timeout (in seconds) of this provider."""
+        self._timeout = value
 
     @abc.abstractmethod
     def get_name(self):
-        """"Retrieve data from the input source
-        and return an object.
+        """"Get the name of this provider.
         """
 
     @abc.abstractmethod
-    def geocode_address(self, address):
-        """Retrieve data from the input source
-        and return an object.
-        """
+    def get_geocode(self, address):
+        """Fetch the latitude and longitude for the given address.
+
+         Args:
+             address: The geographical address.
+         Returns:
+             A LatLng object containing the geocoded latitude and longitude
+         """
