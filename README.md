@@ -33,7 +33,7 @@ PrimaryProvider = google
 SecondaryProvider = here
 
 [provider.google]
-ApiKey = <xxx>
+ApiKey = [xxx]
 
 [provider.here]
 AppId = <xxx>
