@@ -53,8 +53,9 @@ Logging control:
 - set the `level` property to set the logging level
 
 Config file:  
-Note: xxx values should be set to the appropriate value  
-The Api keys below are required for the Google and Here services below  
+- Note: xxx values should be set to the appropriate value  
+- The Api keys below are required for the Google and Here services below  
+- The included config.ini file contains a running config with real API keys that can be used (within accoutn limits).
 
 Sample config file:  
 <pre>
