@@ -6,7 +6,7 @@ Google Maps api is used as the primary geocoding provider by default. On failure
 Requirements: Python 3 runtime. Tested against Python 3.6
 
 ## Using the REST API
-GET /geocode?address=<address>
+GET /geocode?address=<<address>>
 
 Query parameter:
 - address - the geographic address eg. 1600 Amphitheatre Parkway, Mountain View, CA
