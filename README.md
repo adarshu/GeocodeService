@@ -55,7 +55,7 @@ Logging control:
 Config file:  
 - Note: xxx values should be set to the appropriate value  
 - The Api keys below are required for the Google and Here services below  
-- The included config.ini file contains a running config with real API keys that can be used (within accoutn limits).
+- The included config.ini file contains a running config with real API keys that can be used (within account limits).
 
 Sample config file:  
 <pre>
@@ -74,8 +74,8 @@ AppCode = xxx
 </pre>
 
 ## Extending the code
-- 2 geocoding providers are provided: Google Maps, and Here maps
-- new Geocoding providers may be created via simply extending `GeocodeProvider` and using them as the primary or secondary provider
+- 2 geocoding providers are provided: Google Maps, and Here Maps
+- new Geocoding providers may be created via simply extending `GeocodeProvider` and setting them as the primary or secondary provider
 
 ## TODOs/Future enhancements
 - make the code follow the "Pythonic" way
