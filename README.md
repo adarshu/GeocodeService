@@ -1,7 +1,7 @@
 # GeocodeService
-Geocoding REST service using GMaps and Here maps.
+Geocoding REST service using GMaps and Here maps. Fetches the latitude/longitude given a street address.
 
-Google Maps api is used as the primary geocoding provider by default. On failure or unavailability, Here maps is used. See below for details.
+Google Maps api is used as the primary geocoding provider by default. On failure or unavailability, Here maps is used. See below for details and configuration.
 
 Requirements: Python 3 runtime. Tested against Python 3.6
 
