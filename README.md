@@ -10,6 +10,7 @@ Sample:
 python geocode_service.py --config config.ini --port 8081
 
 Commandline usage:
+<pre>
 usage: geocode_service.py [-h] [--config CONFIG] [--port PORT]
 
 optional arguments:
@@ -18,11 +19,13 @@ optional arguments:
                    included sample for an example.
   --port PORT      server port to run service on; if omitted, defaults to
                    value in config file
-                   
+</pre>
+
 Sample config file:
 Note: values in <test> should be set to the appropriate value)
 The Api keys below are required for the Google and Here services below
 
+<pre>
 [DEFAULT]
 ServerPort = 8081
 RemoteTimeout = 3
@@ -35,3 +38,4 @@ ApiKey = <xxx>
 [provider.here]
 AppId = <xxx>
 AppCode = <xxx>
+</pre>
