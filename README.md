@@ -5,7 +5,13 @@ Google Maps api is used as the primary geocoding provider by default. On failure
 
 Requirements: Python 3 runtime. Tested against Python 3.6
 
-## How to use
+## Using the service
+GET /geocode?address=<address>
+
+Sample:
+
+
+## Run the service
 Sample:
 python geocode_service.py --config config.ini --port 8081
 
