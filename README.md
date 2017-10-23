@@ -8,8 +8,7 @@ Requirements: Python 3 runtime. Tested against Python 3.6
 ## Using the service
 GET /geocode?address=<address>
 
-Sample:
-
+Sample HTTP Get call: GET server:port/geocode?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA
 
 ## Run the service
 Sample:
