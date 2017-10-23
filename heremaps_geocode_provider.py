@@ -55,5 +55,5 @@ class HeremapsGeocodeProvider(GeocodeProvider):
             raise GeocodeException("Value error")
         # catch connection errors
         except URLError as error:
-            logging.error('URL error: ' + error.reason)
+            logging.error('URL error: ' + str(error))
             raise GeocodeException("URLError")
