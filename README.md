@@ -22,7 +22,7 @@ optional arguments:
 </pre>
 
 Sample config file:
-Note: values in <test> should be set to the appropriate value)
+Note: xxx values should be set to the appropriate value
 The Api keys below are required for the Google and Here services below
 
 <pre>
@@ -33,9 +33,9 @@ PrimaryProvider = google
 SecondaryProvider = here
 
 [provider.google]
-ApiKey = [xxx]
+ApiKey = xxx
 
 [provider.here]
-AppId = <xxx>
-AppCode = <xxx>
+AppId = xxx
+AppCode = xxx
 </pre>
