@@ -5,8 +5,25 @@ Google Maps api is used as the primary geocoding provider by default. On failure
 
 Requirements: Python 3 runtime. Tested against Python 3.6
 
-## Using the service
+## Using the REST API
 GET /geocode?address=<address>
+
+Query parameter:
+- address - the geographic address eg. 1600 Amphitheatre Parkway, Mountain View, CA
+
+Response:
+- response will be Content-type: application/json
+- 400 HTTP code for invalid input
+- 500 HTTP code for server error
+
+Sample response:
+<pre>
+{
+    "status": "OK",
+    "lat": 37.4216548,
+    "lng": -122.0856374
+}
+</pre>
 
 Sample HTTP Get call: GET server:port/geocode?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA
 
